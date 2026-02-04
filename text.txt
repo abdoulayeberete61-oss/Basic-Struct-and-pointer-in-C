@@ -1,0 +1,20 @@
+#include <stdio.h>
+ typedef struct {
+  int attack;
+  int health;
+  int speed;
+}Player;
+void updatePlayer( Player*p){
+  p->attack=100;
+  p->health=145;
+  p->speed=40;
+}
+int main(){
+ Player player1={85,130,25};
+  updatePlayer(&player1);
+  printf("attack:%d\n",player1.attack);
+    printf("health:%d\n",player1.health);
+  printf("speed:%d",player1.speed);
+
+  return 0;
+}
